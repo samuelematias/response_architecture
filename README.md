@@ -23,6 +23,8 @@ This is a example app who show to how you can create and use a Responsive UI in 
 
 - The Best Flutter Responsive UI Setup: [Tutorial](https://www.youtube.com/watch?v=z7P1OFLw4kY&list=PLdTodMosi-Bzx3TMPdNzqLPIab_t7WkCC&index=2&t=0s) / [Branch](https://github.com/samuelematias/responsive_architecture/tree/tutoria-1/how-to-build-a-flutter-responsive-ui).
 
+- Ultimate Flutter Responsive UI Guide | Flutter Responsive Web: [Tutorial](https://www.youtube.com/watch?v=udsysUj-X4w&list=PLdTodMosi-Bzx3TMPdNzqLPIab_t7WkCC&index=2) / [Branch](https://github.com/samuelematias/responsive_architecture/tree/tutoria-2/how-to-build-a-flutter-responsive-ui).
+
 ## Tech Stack 👩🏾‍💻
 
 - [Dart](https://dart.dev/)
