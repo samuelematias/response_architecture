@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:response_architecture/ui/base_widget.dart';
+import 'package:responsive_architecture/ui/base_widget.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key key}) : super(key: key);
