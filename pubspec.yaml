@@ -11,6 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  device_preview: 0.3.0+1
 
   cupertino_icons: ^0.1.3
 
