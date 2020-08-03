@@ -1,16 +1,37 @@
-# response_architecture
+<!-- header section -->
+<p align="center">
+  <img src="https://i.imgur.com/GAbJ9Hn.png" /><br/>
+  <span><b>Flutter Responsive UI</b></span><br/>
+</p>
+<!-- header section END -->
 
-A new Flutter project.
+<br/>
+<!-- show case/gif section -->
 
-## Getting Started
+<!-- show case/gif section END -->
 
-This project is a starting point for a Flutter application.
+<br/>
 
-A few resources to get you started if this is your first Flutter project:
+<!-- about app and course section -->
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## About this app 🗣
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This app was developed from the tutorial [How to build a Flutter Responsive UI](https://www.youtube.com/playlist?list=PLdTodMosi-Bzx3TMPdNzqLPIab_t7WkCC) by [Dane Mackier (Filledstacks)](https://www.filledstacks.com/).<br/><br/>
+This is a example app who show to how you can create and use a Responsive UI in your Flutter apps.
+
+## Tutorial 📖 / Branch 📦
+
+- The Best Flutter Responsive UI Setup: [Tutorial](https://www.youtube.com/watch?v=z7P1OFLw4kY&list=PLdTodMosi-Bzx3TMPdNzqLPIab_t7WkCC&index=2&t=0s) / [Branch](https://github.com/samuelematias/response_architecture/tree/tutoria-1/how-to-build-a-flutter-responsive-ui).
+
+## Tech Stack 👩🏾‍💻
+
+- [Dart](https://dart.dev/)
+- [Flutter](https://flutter.dev/)
+
+## Plugins 📟
+
+- [device_preview](https://pub.dev/packages/device_preview)
+
+<br/>
+
+<!-- about app and course section END -->
