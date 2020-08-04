@@ -14,6 +14,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   device_preview: 0.3.0+1
+  provider: ^4.3.1
 
   cupertino_icons: ^0.1.3
 
