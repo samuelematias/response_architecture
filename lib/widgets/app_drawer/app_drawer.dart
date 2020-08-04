@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:responsive_architecture/responsive/orientation_layout.dart';
 import 'package:responsive_architecture/responsive/screen_type_layout.dart';
 import 'package:responsive_architecture/widgets/app_drawer/app_drawer_mobile.dart';
-import 'package:responsive_architecture/widgets/app_drawer/app_drawer_tablet.dart';
 import 'package:responsive_architecture/widgets/drawer_option/drawer_option.dart';
+
+import 'app_drawer_tablet.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({Key key}) : super(key: key);
@@ -11,7 +12,7 @@ class AppDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: AppDrawerMobileLayout(),
+      mobile: AppDrawerMobile(),
       tablet: OrientationLayout(
         portrait: AppDrawerTabletPortrait(),
         landscape: AppDrawerTabletLandscape(),

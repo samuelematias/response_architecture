@@ -1,12 +1,12 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 class OrientationLayout extends StatelessWidget {
   final Widget landscape;
   final Widget portrait;
-  OrientationLayout({
+  const OrientationLayout({
     Key key,
     this.landscape,
-    @required this.portrait,
+    this.portrait,
   }) : super(key: key);
 
   @override

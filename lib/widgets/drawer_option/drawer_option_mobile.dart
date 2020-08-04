@@ -42,10 +42,7 @@ class DrawerOptionMobileLandscape extends StatelessWidget {
     return Container(
       height: 70,
       alignment: Alignment.center,
-      child: Icon(
-        iconData,
-        size: 30,
-      ),
+      child: Icon(iconData),
     );
   }
 }

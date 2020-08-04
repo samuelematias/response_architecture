@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_architecture/responsive/orientation_layout.dart';
 import 'package:responsive_architecture/responsive/screen_type_layout.dart';
-import 'package:responsive_architecture/widgets/drawer_option/drawer_option_mobile.dart';
-import 'package:responsive_architecture/widgets/drawer_option/drawer_option_tablet.dart';
+
+import 'drawer_option_mobile.dart';
+import 'drawer_option_tablet.dart';
 
 class DrawerOption extends StatelessWidget {
   final String title;
@@ -17,11 +18,11 @@ class DrawerOption extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
       mobile: OrientationLayout(
-        portrait: DrawerOptionMobilePortrait(
-          iconData: iconData,
-          title: title,
-        ),
         landscape: DrawerOptionMobileLandscape(
+          iconData: iconData,
+        ),
+        portrait: DrawerOptionMobilePortrait(
+          title: title,
           iconData: iconData,
         ),
       ),
@@ -30,8 +31,9 @@ class DrawerOption extends StatelessWidget {
           iconData: iconData,
           title: title,
         ),
-        landscape: DrawerOptionMobileLandscape(
+        landscape: DrawerOptionMobilePortrait(
           iconData: iconData,
+          title: title,
         ),
       ),
     );
