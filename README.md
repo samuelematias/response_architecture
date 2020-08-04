@@ -35,6 +35,7 @@ This is a example app who show to how you can create and use a Responsive UI in 
 ## Plugins 📟
 
 - [device_preview](https://pub.dev/packages/device_preview)
+- [provider](https://pub.dev/packages/provider)
 
 <br/>
 
