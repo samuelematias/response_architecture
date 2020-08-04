@@ -1,26 +1,39 @@
-import 'package:flutter/material.dart';
-import 'package:responsive_architecture/widgets/app_drawer/app_drawer.dart';
+/// Contains the widgets that will be used for Mobile layout of home,
+/// portrait and landscape
 
-class HomeMobilePortrait extends StatelessWidget {
+import 'package:flutter/material.dart';
+import 'package:responsive_architecture/viewmodels/home_viewmodel.dart';
+import 'package:responsive_architecture/widgets/app_drawer/app_drawer.dart';
+import 'package:responsive_architecture/widgets/base_model_widget.dart';
+
+class HomeMobilePortrait extends BaseModelWidget<HomeViewModel> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, HomeViewModel model) {
     return Scaffold(
       key: _scaffoldKey,
       drawer: AppDrawer(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          model.updateTitle();
+        },
+      ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16),
             child: IconButton(
-              icon: Icon(
-                Icons.menu,
-                size: 30,
-              ),
+              icon: Icon(Icons.menu, size: 30),
               onPressed: () {
-                _scaffoldKey.currentState.openDrawer();
+                _scaffoldKey?.currentState?.openDrawer();
               },
+            ),
+          ),
+          Expanded(
+            child: Center(
+              child: Text(model.title),
             ),
           )
         ],
@@ -29,15 +42,18 @@ class HomeMobilePortrait extends StatelessWidget {
   }
 }
 
-class HomeMobileLandscape extends StatelessWidget {
-  const HomeMobileLandscape({Key key}) : super(key: key);
-
+class HomeMobileLandscape extends BaseModelWidget<HomeViewModel> {
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, HomeViewModel model) {
     return Scaffold(
       body: Row(
         children: <Widget>[
           AppDrawer(),
+          Expanded(
+            child: Center(
+              child: Text(model.title),
+            ),
+          )
         ],
       ),
     );
