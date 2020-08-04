@@ -1,7 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:responsive_architecture/ui/views/home_view.dart';
+import 'package:responsive_architecture/views/home/home_view.dart';
 
 void main() => runApp(
       DevicePreview(
